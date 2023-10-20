@@ -1,57 +1,22 @@
-<!-- Agrega esta sección dentro del <body> de tu documento HTML -->
-<div id="formulario">
-    <label for="peso">Peso Corporal (kg):</label>
-    <input type="number" id="peso" placeholder="Ingresa tu peso">
-    <button onclick="graficarPeso()">Guardar</button>
-</div>
-<div id="grafico">
-    <canvas id="myChart"></canvas>
-</div>
-
-<!-- Asegúrate de que el gráfico se muestre en un elemento <canvas> con un id específico, como "myChart" en este caso. -->
-
-<script>
-    // Añade esta sección de JavaScript para graficar el peso
-    function graficarPeso() {
-        const peso = parseFloat(document.getElementById("peso").value);
-        const ctx = document.getElementById('myChart').getContext('2d');
-
-        // Define los datos del gráfico
-        const data = {
-            labels: ['Peso'],
-            datasets: [{
-                label: 'Peso Corporal (kg)',
-                data: [peso],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
-            }]
-        };
-
-        // Define la configuración del gráfico
-        const options = {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        };
-
-        // Crea el gráfico usando Chart.js
-        const myChart = new Chart(ctx, {
-            type: 'bar',
-            data: data,
-            options: options
-        });
-    }
-</script>
-
-    <script>
-        // Debes incluir la biblioteca de gráficos (por ejemplo, Chart.js) y escribir código JavaScript para crear el gráfico
-        function graficarPeso() {
-            const peso = parseFloat(document.getElementById("peso").value);
-            // Aquí debes agregar código para graficar el peso en el elemento #grafico
-        }
-    </script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form action="login.php" method="post">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
 </body>
 </html>
+
