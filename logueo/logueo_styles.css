@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('https://img.freepik.com/vector-premium/ejercicios-gimnasio-personajes-dibujos-animados-haciendo-actividades-deportivas-concepto-entrenamiento-entrenamiento-fitness_176516-1150.jpg');
 }
 
 .login-container {
