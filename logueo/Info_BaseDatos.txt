@@ -1,2 +1,3 @@
 Web de MySQL
 https://console.clever-cloud.com/users/me/addons/addon_351b87cb-9dbf-46f6-93fd-c5725ee655dc
+https://www.postecnologia.com/2017/10/comandos-basicos-de-mysql-desde-consola.html ····· Web con info para manejar la base de datos
