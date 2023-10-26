@@ -9,7 +9,7 @@ body {
     align-items: center;
     height: 100vh;
 
-    background-image: url('../logo.png'); /* Corregido: usa "url()" para la imagen de fondo */
+    background-image: url('/fit-friends-rivals/logo.png'); /* Corregido: usa "url()" para la imagen de fondo */
     background-size: 60%; /* Utiliza "cover" para que la imagen de fondo se ajuste al tamaño del viewport */
     background-position: center;
     background-repeat: no-repeat;
@@ -28,9 +28,6 @@ body {
     left: 50%; /* Lo posiciona en el centro horizontalmente */
     transform: translate(-50%, -50%); /* Centra el contenedor correctamente */
     z-index: 1; /* Asegura que el contenedor esté por encima de la imagen de fondo */
-}
-
-.imageperfil-containerh1 {
 }
 
 h1 {
