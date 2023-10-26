@@ -29,7 +29,7 @@ if ($result === false) {
 
 if ($result->num_rows > 0) {
     // Inicio de sesión exitoso, redirigir al usuario a una página de bienvenida
-    header("Location: bienvenida.php");
+    header("Location: https://fit-friends-rivals.github.io/home/bienvenida.php");
 } else {
     // Inicio de sesión fallido, redirigir de nuevo a la página de inicio de sesión con un mensaje de error
     header("Location: index.html?error=1");
