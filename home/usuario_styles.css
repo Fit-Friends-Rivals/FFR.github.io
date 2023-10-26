@@ -1,40 +1,42 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #97acb9;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-    background-image: url('/fit-friends-rivals/logo.png'); /* Corregido: usa "url()" para la imagen de fondo */
-    background-size: 60%; /* Utiliza "cover" para que la imagen de fondo se ajuste al tamaño del viewport */
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; /* Agrega esta propiedad para que los elementos dentro de body se apilen uno encima del otro */
+    background-color: #f2f2f2; /* Color de fondo */
 }
 
-.datauser-container {
-    background-color: #dddada;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+.container {
     text-align: center;
-    max-width: 100%;
-    position: absolute; /* Permite que el contenedor de inicio de sesión se superponga a la imagen de fondo */
-    top: 70%; /* Lo posiciona en el centro verticalmente */
-    left: 50%; /* Lo posiciona en el centro horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el contenedor correctamente */
-    z-index: 1; /* Asegura que el contenedor esté por encima de la imagen de fondo */
+    background-color: #fff; /* Color de fondo del cuadrado */
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 70%; /* Ancho del cuadrado (70% de la pantalla) */
+    max-width: 400px; /* Máximo ancho del cuadrado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-form {
-    margin: 10%;
+.profile-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Ancho del círculo de la imagen de perfil */
+    height: 100px; /* Altura del círculo de la imagen de perfil */
+    border-radius: 50%; /* Hace que sea un círculo */
+    background-color: #3e87a4; /* Color de fondo del círculo */
+    margin: 0 auto 20px; /* Margen inferior para separar la imagen de perfil del texto */
 }
 
-h1 {
-    color: #333;
+.profile-circle img {
+    width: 80px; /* Ancho de la imagen de perfil */
+    height: 80px; /* Altura de la imagen de perfil */
+    border-radius: 50%; /* Hace que la imagen sea un círculo */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo sin deformarla */
 }
 
+h1, p {
+    margin: 0;
+    padding: 0;
+}
