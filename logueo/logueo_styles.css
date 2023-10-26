@@ -9,7 +9,7 @@ body {
     align-items: center;
     height: 100vh;
 
-    background-image: url('http:://fit-friends-rivals.github.io/logo.png/'); /* Corregido: usa "url()" para la imagen de fondo */
+    background-image: url('/fit-friends-rivals.github.io/logo.png/'); /* Corregido: usa "url()" para la imagen de fondo */
     background-size: 60%; /* Utiliza "cover" para que la imagen de fondo se ajuste al tamaño del viewport */
     background-position: center;
     background-repeat: no-repeat;
