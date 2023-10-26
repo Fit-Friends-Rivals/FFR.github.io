@@ -1,23 +1,33 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #97acb9;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('https://img.freepik.com/vector-premium/ejercicios-gimnasio-personajes-dibujos-animados-haciendo-actividades-deportivas-concepto-entrenamiento-entrenamiento-fitness_176516-1150.jpg');
+
+    background-image: url('../logo.png'); /* Corregido: usa "url()" para la imagen de fondo */
+    background-size: 60%; /* Utiliza "cover" para que la imagen de fondo se ajuste al tamaño del viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Agrega esta propiedad para que los elementos dentro de body se apilen uno encima del otro */
 }
 
 .login-container {
-    background-color: #fff;
+    background-color: #dddada;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 300px;
+    max-width: 100%;
+    position: absolute; /* Permite que el contenedor de inicio de sesión se superponga a la imagen de fondo */
+    top: 70%; /* Lo posiciona en el centro verticalmente */
+    left: 50%; /* Lo posiciona en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el contenedor correctamente */
+    z-index: 1; /* Asegura que el contenedor esté por encima de la imagen de fondo */
 }
 
 h1 {
@@ -28,9 +38,16 @@ form {
     margin-top: 20px;
 }
 
-label, input {
+label {
     display: block;
-    margin: 10px 0;
+    margin: 10px auto;
+    position: center;
+}
+
+input {
+    display: block; /* Hace que el input sea un elemento de bloque para que esté en una línea separada */
+    position: center;
+    margin: 10px auto; /* Centra el campo de entrada horizontalmente */
 }
 
 button {
