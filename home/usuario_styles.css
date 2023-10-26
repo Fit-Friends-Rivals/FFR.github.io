@@ -13,9 +13,10 @@ body {
     background-color: #fff; /* Color de fondo del cuadrado */
     padding: 20px;
     border: 1px solid #ccc;
-    width: 70%; /* Ancho del cuadrado (70% de la pantalla) */
-    max-width: 400px; /* Máximo ancho del cuadrado */
+    max-width: 70%; /* Máximo ancho del cuadrado (70% de la pantalla) */
+    width: 100%; /* Ancho completo del contenedor */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Centra horizontalmente el cuadrado */
 }
 
 .profile-circle {
