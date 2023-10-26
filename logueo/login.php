@@ -23,6 +23,10 @@ $sql = "SELECT * FROM usuarios WHERE username = '$username' AND password = '$pas
 $result = $conn->query($sql);
 
 // Verificar si se encontró un usuario con las credenciales
+if ($result === false) {
+    die("Error en la consulta SQL: " . $conn->error);
+}
+
 if ($result->num_rows > 0) {
     // Inicio de sesión exitoso, redirigir al usuario a una página de bienvenida
     header("Location: bienvenida.php");
@@ -34,4 +38,3 @@ if ($result->num_rows > 0) {
 // Cerrar la conexión a la base de datos
 $conn->close();
 ?>
-
